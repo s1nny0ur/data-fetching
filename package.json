@@ -1,0 +1,32 @@
+{
+  "name": "data-fetching",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "serve": "turbo serve --filter json-server",
+    "dev": "turbo dev",
+    "dev0": "turbo dev --filter 0-json-server",
+    "dev1": "turbo dev --filter 1-vite-componentdidmount",
+    "dev2": "turbo dev --filter 2-vite-useeffect",
+    "dev3": "turbo dev --filter 3-vite-reactquery",
+    "dev31": "turbo dev --filter 3.1-vite-reactquery-refactor",
+    "dev32": "turbo dev --filter 3.2-vite-reactquery-infinite",
+    "dev4": "turbo dev --filter 4-nextjs-ssg",
+    "dev5": "turbo dev --filter 5-nextjs-ssr",
+    "dev51": "turbo dev --filter 5.1-sveltekit-ssr",
+    "dev6": "turbo dev --filter 6-remix-ssr",
+    "dev7": "turbo dev --filter 7-nextjs-rsc",
+    "dev71": "turbo dev --filter 7.1-nextjs-rsc-react-query",
+    "dev72": "turbo dev --filter 7.2-nextjs-rsc-react-query-streaming",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "turbo": "2.1.2"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "pnpm@9.3.0"
+}
